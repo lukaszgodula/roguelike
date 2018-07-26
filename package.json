@@ -4,7 +4,8 @@
   "description": "Coding dojo kata to create a rougelike game",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodejs src/index.js",
+    "build": "tsc src/index.ts",
+    "start": "yarn build && nodejs src/index.js",
     "test": "mocha tests/*.spec.js"
   },
   "devDependencies": {
