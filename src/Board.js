@@ -1,29 +1,21 @@
 'use strict';
-
-const floor = '.';
-
-const boardWidth = 28;
-const boardHeight = 14;
-
-let board = [];
-
+exports.__esModule = true;
+var floor = '.';
+var boardWidth = 28;
+var boardHeight = 14;
+exports.board = [];
 function init() {
-  for (let i = 0; i < boardHeight; i++) {
-    board[i] = [];
-    for (let j = 0; j < boardWidth; j++) {
-      board[i][j] = floor;
+    for (var i = 0; i < boardHeight; i++) {
+        exports.board[i] = [];
+        for (var j = 0; j < boardWidth; j++) {
+            exports.board[i][j] = floor;
+        }
     }
-  }
 }
-
+exports.init = init;
 function write() {
-  for (let i = 0; i < boardHeight; i++) {
-    console.log(board[i].join(''));
-  }
+    for (var i = 0; i < boardHeight; i++) {
+        console.log(exports.board[i].join(''));
+    }
 }
-
-module.exports = {
-  board: board,
-  init: init,
-  write: write
-};
+exports.write = write;
