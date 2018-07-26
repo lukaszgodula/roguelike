@@ -1,3 +1,4 @@
-export class Hero {
-    
+export interface Hero {
+    position: Coordinates;
+    healthPoints: number;
 }
